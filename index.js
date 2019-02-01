@@ -1,0 +1,27 @@
+
+var scrolling = false;
+var lastScroll =0;
+var currentScroll = window.scrollY;
+
+var navbar = document.getElementById("nav-bar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function scroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+window.addEventListener("scroll", function(e){
+  if(scrolling) return;
+  scrolling = true;
+
+  scroll();
+
+  scrolling = false;
+});

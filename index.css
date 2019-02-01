@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: White;
+
+  position: sticky;
+}
+
+
+.nav-elem {
+  float: left;
+  font-family: Arial;
+  font-size: 19px;
+
+}
+
+.nav-elem a {
+  display: inline-block;
+  color: black;
+  height: inherit;
+  padding: 32px;
+
+  text-decoration: none;
+}
+
+.nav-elem a:hover {
+    background-color: #BBB;
+}
+
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+
+  font-family: Arial;
+}
+
+
+.spoon-div {
+
+}
+.spoon {
+  object-fit: cover;
+  height:540px;
+  width: 100%;
+}
+
+.footer {
+  background-color: #DDD;
+  margin-top:20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.mission {
+  font-family: arial;
+  font-size: 45px;
+  text-align:center;
+}
+
+.reg-text {
+  font-family: arial;
+  font-size: 23px;
+}
+.did-you-know{
+  font-size: 17px;
+  margin-top:30px;
+}
+.sections{
+  margin-top:120px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
